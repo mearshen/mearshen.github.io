@@ -70,7 +70,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "乱入软件的大厨，智能机器人。。喜欢所有与食物有关的文字和图。"
+sidebar-about-description: "机器人运动与视觉。喜欢所有与食物有关的文字和图。"
 sidebar-avatar: /img/LBJ_avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
