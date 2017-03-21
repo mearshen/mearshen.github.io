@@ -7,20 +7,22 @@ header-img: "img/about-bg.jpg"
 
 <!-- Language Selector -->
 <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> ���� Chinese </option>
-    <option value="1"> Ӣ�� English </option>
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
 </select>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
 
     <!--copied from markdown -->
-    <p>Hi������<strong>��Ҫ</strong>������ʦ����ѧ����ѧԺ <a href="http://www.robotics.sei.ecnu.edu.cn" target="_blank">�������˶����Ӿ�ʵ����</a>��ѧ�����ҵ��о������ǻ����Ӿ��������������������������ҵ���Ŀ�����Ŀ��Բ鿴�ҵ�<a href="https://mearshen.github.io/portfolio" target="_blank">��Ʒ��</a>��</p>
+    <p>Hi，我是<strong>刘要</strong>，华东师范大学软件学院 <a href="http://www.robotics.sei.ecnu.edu.cn" target="_blank">机器人运动与视觉实验室</a>的学生。我的研究方向是基于视觉导航的四旋翼飞行器。更多我的项目及论文可以查看我的<a href="https://mearshen.github.io/portfolio" target="_blank">作品集</a>。</p>
+	<p>联系方式：mearshen # gmail DOT com</p>
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    <p>Hi, I am <strong>Yao Liu</strong>��I'm an graduate student at  <a href="http://www.robotics.sei.ecnu.edu.cn" target="_blank">Robot motion &amp; vision Lab </a>,East China Normal University. And I major in vision-based quadrotor. For more about my publications and projects, please visit my <a href="https://mearshen.github.io/portfolio" target="_blank">Portfolio</a>.</p>
+    <p>Hi, I am <strong>Yao Liu</strong>，I'm an graduate student at  <a href="http://www.robotics.sei.ecnu.edu.cn" target="_blank">Robot motion &amp; vision Lab </a>,East China Normal University. And I major in vision-based quadrotor. For more about my publications and projects, please visit my <a href="https://mearshen.github.io/portfolio" target="_blank">Portfolio</a>.</p>
+	<p>contact me: mearshen # gmail DOT com</p>
 </div>
 
 <!-- Handle Language Change -->
@@ -66,7 +68,7 @@ header-img: "img/about-bg.jpg"
 
 
 {% if site.duoshuo_username %}
-<!-- 澶氳璇勮妗?start -->
+<!-- 多说评论框 start -->
 <div class="comment">
     <!-- This id is used for indexing my loss comments forcedly -->
     <div class="ds-thread"
@@ -80,9 +82,9 @@ header-img: "img/about-bg.jpg"
     data-title="{{page.title}}"
     data-url="{{site.url}}/about/"></div>
 </div>
-<!-- 澶氳璇勮妗?end -->
+<!-- 多说评论框 end -->
 
-<!-- 澶氳鍏叡JS浠ｇ爜 start (涓€涓綉椤靛彧闇€鎻掑叆涓€娆? -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     // dynamic User hacking by Hux
     var _user = '{{site.duoshuo_username}}';
@@ -98,20 +100,20 @@ header-img: "img/about-bg.jpg"
          || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
-<!-- 澶氳鍏叡JS浠ｇ爜 end -->
+<!-- 多说公共JS代码 end -->
 {% endif %}
 
 
 {% if site.disqus_username %}
-<!-- disqus 璇勮妗?start -->
+<!-- disqus 评论框 start -->
 <div class="comment">
     <div id="disqus_thread" class="disqus-thread">
 
     </div>
 </div>
-<!-- disqus 璇勮妗?end -->
+<!-- disqus 评论框 end -->
 
-<!-- disqus 鍏叡JS浠ｇ爜 start (涓€涓綉椤靛彧闇€鎻掑叆涓€娆? -->
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
@@ -124,5 +126,5 @@ header-img: "img/about-bg.jpg"
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<!-- disqus 鍏叡JS浠ｇ爜 end -->
+<!-- disqus 公共JS代码 end -->
 {% endif %}
