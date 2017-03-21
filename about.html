@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "Who is YaoYao"
+description: "This is YaoYao"
 header-img: "img/about-bg.jpg"
 ---
 
@@ -16,13 +16,13 @@ header-img: "img/about-bg.jpg"
 
     <!--copied from markdown -->
     <p>Hi，我是<strong>刘要</strong>，华东师范大学软件学院 <a href="http://www.robotics.sei.ecnu.edu.cn" target="_blank">机器人运动与视觉实验室</a>的学生。我的研究方向是基于视觉导航的四旋翼飞行器。更多我的项目及论文可以查看我的<a href="https://mearshen.github.io/portfolio" target="_blank">作品集</a>。</p>
-	<p>联系方式：mearshen # gmail DOT com</p>
+	<p>联系方式：mearshen [at] gmail DOT com</p>
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
     <p>Hi, I am <strong>Yao Liu</strong>，I'm an graduate student at  <a href="http://www.robotics.sei.ecnu.edu.cn" target="_blank">Robot motion &amp; vision Lab </a>,East China Normal University. And I major in vision-based quadrotor. For more about my publications and projects, please visit my <a href="https://mearshen.github.io/portfolio" target="_blank">Portfolio</a>.</p>
-	<p>contact me: mearshen # gmail DOT com</p>
+	<p>contact me: mearshen [at] gmail DOT com</p>
 </div>
 
 <!-- Handle Language Change -->
@@ -66,16 +66,13 @@ header-img: "img/about-bg.jpg"
 </script>
 
 
-
 {% if site.duoshuo_username %}
 <!-- 多说评论框 start -->
 <div class="comment">
-    <!-- This id is used for indexing my loss comments forcedly -->
     <div class="ds-thread"
     {% if site.duoshuo_username == "huxblog" %}
         data-thread-id="1187623191091085319"
     {% else %}
-    <!-- U can just use this key generated to index comments at page about -->
         data-thread-key="{{site.duoshuo_username}}/about"
     {% endif %}
 
@@ -84,11 +81,13 @@ header-img: "img/about-bg.jpg"
 </div>
 <!-- 多说评论框 end -->
 
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     // dynamic User hacking by Hux
-    var _user = '{{site.duoshuo_username}}';
-
+    var _user = document.getElementById('dsUser').value;
     // duoshuo comment query.
     var duoshuoQuery = {short_name: _user };
     (function() {
@@ -101,30 +100,4 @@ header-img: "img/about-bg.jpg"
     })();
 </script>
 <!-- 多说公共JS代码 end -->
-{% endif %}
-
-
-{% if site.disqus_username %}
-<!-- disqus 评论框 start -->
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus_username}}";
-    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
 {% endif %}
