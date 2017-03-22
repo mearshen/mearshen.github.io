@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: yaoyao-blog
+#disqus_username: yaoyao-blog
 
 # Duoshuo settings
 #duoshuo_username: YaoYao
@@ -60,7 +60,7 @@ disqus_username: yaoyao-blog
 
 # Analytics settings
 # Baidu Analytics 
- ba_track_id: 0190bda00257f8b0f317eac43a0bc787
+ba_track_id: 0190bda00257f8b0f317eac43a0bc787
 
 # Google Analytics
 #ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
