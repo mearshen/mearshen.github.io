@@ -65,9 +65,31 @@ header-img: "img/about-bg.jpg"
     _render();
 </script>
 
+<div id="disqus_thread"></div>
+<script>
 
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = https://mearshen.github.io;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://yaoyao-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//yaoyao-blog.disqus.com/count.js" async></script>
+<!-- 
 {% if site.duoshuo_username %}
-<!-- 多说评论框 start -->
+<!-- 多说评论框 start 
 <div class="comment">
     <div class="ds-thread"
     {% if site.duoshuo_username == "huxblog" %}
@@ -79,12 +101,12 @@ header-img: "img/about-bg.jpg"
     data-title="{{page.title}}"
     data-url="{{site.url}}/about/"></div>
 </div>
-<!-- 多说评论框 end -->
+多说评论框 end 
 
-<!-- Duoshuo hacking -->
+ Duoshuo hacking 
 <input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+多说公共JS代码 start (一个网页只需插入一次)
 <script type="text/javascript">
     // dynamic User hacking by Hux
     var _user = document.getElementById('dsUser').value;
@@ -99,5 +121,6 @@ header-img: "img/about-bg.jpg"
          || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
-<!-- 多说公共JS代码 end -->
-{% endif %}
+多说公共JS代码 end 
+
+{% endif %}--> 
